@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
+    "beautiful": "prettier --tab-width 4 useTabs: true singleQuote: true --trailing-comma all --write .",
     "start": "nodemon --inspect  src/index.js",
     "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,8 +19,11 @@
     "express-handlebars": "^7.0.7"
   },
   "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
     "sass": "^1.62.0"
   },
   "repository": {
